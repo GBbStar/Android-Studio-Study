@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_weight="9"
+>
+
+    <LinearLayout
+        style="?android:buttonBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="#FFFFFF"
+        android:dividerPadding="15dp"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/imgbackground"
+            android:src="@drawable/music2"
+
+            />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="찾고싶은 음악을 검색하세요"
+            android:background="@drawable/imgbackground"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:src="@drawable/search"
+            android:background="@drawable/imgbackground"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_ad_unit_id_for_test"
+
+            >
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>
