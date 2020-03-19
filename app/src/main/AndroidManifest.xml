@@ -4,7 +4,11 @@
 
     <!-- 인터넷을 사용하기 위한 권한입니다. -->
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    출처: https://superwony.tistory.com/84 [개발자 키우기]
 
 
     <application
@@ -18,10 +22,14 @@
         <!-- play-services-ads 17.0.0 이상부터는 앱 ID를 입력해줘야 합니다 -->
 
         <meta-data
-
             android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"
+            />
 
-            android:value="@string/admob_app_id"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="2a2262c85dcc6d53e4bccfc937059f71"
+        />
 
         <activity android:name=".MainActivity">
             <intent-filter>
